@@ -40,8 +40,9 @@ class ImageUploadHandler{
             $constraint->aspectRatio();
             $constraint->upsize();
 
-            $image->save();
         });
+
+        $image->save();
     }
 }
 
